@@ -5,12 +5,13 @@
 package ejemploProyecto;
 
 /**
- *
+ * Clase principal de cuando creamos el proyecto
  * @author Nadir
  */
 public class EjemploProyecto {
 
     /**
+     * funcion por defecto main
      * @param args the command line arguments
      */
     public static void main(String[] args) {
