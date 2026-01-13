@@ -33,7 +33,7 @@ public class JorgeClass {
        }else{
            float extra = promedio * 0.15f;
            float notaFinal = promedio + extra;
-           mensaje = "APTO (CON EXTRA DE 15%). NOTA: "+notaFinal;
+           mensaje = "APTO (CON EL EXTRA DE 15%). NOTA: "+notaFinal;
        }
        return mensaje;
    }

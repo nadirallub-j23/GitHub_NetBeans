@@ -32,7 +32,7 @@ public class EjemploProyecto {
         String mensaje = jorge.conclusionFinal(promedio);
         
         System.out.println("Promedio obtenido: " + promedio);
-        System.out.println("Conclusion final: " + mensaje);
+        System.out.println("Conclusión final: " + mensaje);
         // comentario de ejemplo primera rama
         
         
