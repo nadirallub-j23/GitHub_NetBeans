@@ -4,6 +4,7 @@ import java.util.Scanner;
 /**
  *
  * @author aleja
+ * @version primera, 13/01/26
  */
 public class AlejandroClass {
     public static void main(String[] args){
