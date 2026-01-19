@@ -1,3 +1,4 @@
+
 package ejemploProyecto;
 
 import org.junit.After;
@@ -7,10 +8,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+
 /**
  *
  * @author Jorge
- */
+*/
 public class JorgeClassTest {
 
     /**
@@ -40,5 +42,4 @@ public class JorgeClassTest {
         String result = instance.conclusionFinal(promedio);
         assertEquals(expResult, result);
     }
-
 }

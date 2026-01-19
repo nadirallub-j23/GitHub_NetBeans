@@ -1,42 +1,64 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package ejemploProyecto;
 
 import java.util.Scanner;
 
 /**
- * Clase principal de cuando creamos el proyecto
+ * Clase principal en la que llamamos a las clases de cada colaborador
+ *
  * @author Nadir
+ * @version ultima, 19/01/2026
  */
 public class EjemploProyecto {
 
     /**
-     * funcion por defecto main
-     * @param args the command line arguments
+     * Funcion Main que contiene un menu para elegir la clase de cada
+     * colaborador y se ejecuten sus metodos
+     *
+     * @param args
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         Scanner teclado = new Scanner(System.in);
-        JorgeClass jorge = new JorgeClass();
-        
-        System.out.print("Introduce la primera nota: ");
-        float n1 = teclado.nextFloat();
-        System.out.print("Introduce la segunda nota: ");
-        float n2 = teclado.nextFloat();
-        System.out.print("Introduce la tercera nota: ");
-        float n3 = teclado.nextFloat();
-        
-        float promedio = jorge.promedioNota(n1, n2, n3);
-        String mensaje = jorge.conclusionFinal(promedio);
-        
-        System.out.println("Promedio obtenido: " + promedio);
-        System.out.println("Conclusion final: " + mensaje);
-        // comentario de ejemplo primera rama
-        
-        
-        // ejemplo de merge
+        Scanner teclado = new Scanner(System.in);
+        int opcion = -1;
+        do {
+            System.out.println("Dime una opcion del 1 al 4: ");
+            opcion = teclado.nextInt();
+            switch (opcion) {
+                case 1:
+                    ClaseNadir a = new ClaseNadir();
+                    a.principal();
+                    break;
+                case 2:
+                    JorgeClass jorge = new JorgeClass();
+                    float n1,
+                     n2,
+                     n3;
+                    System.out.println("Introduce la primera nota: ");
+                    n1 = teclado.nextFloat();
+                    System.out.println("Introduce la segunda nota: ");
+                    n2 = teclado.nextFloat();
+                    System.out.println("Introduce la tercera nota: ");
+                    n3 = teclado.nextFloat();
+
+                    float promedio = jorge.promedioNota(n1, n2, n3);
+                    String mensaje = jorge.conclusionFinal(promedio);
+
+                    System.out.println("Promedio obtenido: " + promedio);
+                    System.out.println("Conclusion final: " + mensaje);
+                    break;
+                case 3:
+                    JuanClase juan = new JuanClase();
+                    juan.calculoImc();
+                    break;
+                case 4:
+                    AlejandroClass alejandro = new AlejandroClass();
+                    alejandro.parteTriangulo();
+                    break;
+                case 0:
+                    System.out.println("Saliendo del programa...");
+                    break;
+            }
+        } while (opcion != 0);
     }
-    
+
 }

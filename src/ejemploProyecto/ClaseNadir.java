@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejemploProyecto;
 
 import java.util.Scanner;
@@ -15,21 +11,22 @@ import java.util.Scanner;
 public class ClaseNadir {
 
     /**
-     * Funcion main, donde se llamará al resto de funciones
-     * @param args 
+     * Funcion principal, donde se llamará al resto de funciones
      */
-    public static void main(String[] args) {
+    public void principal() {
         ClaseNadir ej = new ClaseNadir();
+        System.out.println("Clase de Nadir, suma de 2 numeros");
         int num1 = ej.pideNum("Dime un numero: ");
         int num2 = ej.pideNum("Dime el otro numero: ");
         int res = ej.suma(num1, num2);
         System.out.println("El resultado de la suma es " + res);
     }
-    
+
     /**
      * Funcion pideNum, simplemente para pedirle los datos al usuario
+     *
      * @param mensaje es el mensaje que le mostraremos al usuario
-     * @return 
+     * @return
      */
     public int pideNum(String mensaje) {
         System.out.println(mensaje);
@@ -37,13 +34,16 @@ public class ClaseNadir {
         int num = teclado.nextInt();
         return num;
     }
+
     /**
-     * Esta funcion sirve para hacer la suma de los dos numeros que le pedimos al usuario
+     * Esta funcion sirve para hacer la suma de los dos numeros que le pedimos
+     * al usuario
+     *
      * @param num1 primer numero
      * @param num2 segundo numero
-     * @return 
+     * @return
      */
-    public int suma(int num1, int num2){
+    public int suma(int num1, int num2) {
         return num1 + num2;
     }
 }

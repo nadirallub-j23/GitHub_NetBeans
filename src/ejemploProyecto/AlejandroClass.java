@@ -1,13 +1,18 @@
 package ejemploProyecto;
+
 import java.util.Scanner;
 
 /**
- *
+ * Clase para añadir * para hacer un triángulo
  * @author aleja
  * @version primera, 13/01/26
  */
 public class AlejandroClass {
-    public static void main(String[] args){
+
+    /**
+     * Pide al usuario un número entre 3 y 9 para dibujar un triángulo
+     */
+    public void parteTriangulo() {
         Scanner teclado = new Scanner(System.in);
         int numero;
 
@@ -22,5 +27,5 @@ public class AlejandroClass {
             }
             System.out.println();
         }
-    } 
+    }
 }
